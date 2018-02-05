@@ -1,0 +1,249 @@
+#main-footer{
+color: white;
+}
+body {
+  width: 100%;
+  padding: 0;
+  text-transform: capitalize;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+}
+
+.navbar a{
+  color: white;
+}
+.navbar a:hover{
+color: lightgray;
+}
+#showcase{
+  min-height: 500px;
+
+}
+#servise {
+  background-color: white;
+  margin: 0;
+  min-height:680px;
+}
+#servise1 {
+  background-color: white;
+  margin: 0;
+  min-height:480px;
+}
+#ahover a{
+  color: #23b090;
+  font-size: 35px;
+  text-decoration: none;
+}
+#ahover a:hover{
+  color: #568364;
+}
+
+
+#servise .card-title {
+  color: #23b090;
+  font-size: 25px;
+  text-decoration: none;
+}
+#servise .card-title:hover{
+  color: #568364;
+}
+
+
+#servise1 .card-title {
+  color: #23b090;
+  font-size: 25px;
+  text-decoration: none;
+}
+#servise1 .card-title:hover{
+  color: #568364;
+}
+
+#equipe {
+  background-color:  #f5f5f5;
+  margin: 0;
+  min-height: 650px;
+}
+#about{
+  background-color:white;
+  margin: 0;
+  min-height: 680px;
+}
+.carousel-item{
+min-height: 499px;
+}
+
+.carousel-image-1{
+  background: url('../img/image1.jpeg');
+  background-size: 100% 100%;
+
+}
+.carousel-image-2{
+  background: url('../img/image2.jpeg');
+  background-size: 100% 100%;
+}
+.carousel-image-3{
+  background: url('../img/img-3.jpeg');
+  background-size: 100% 100%;
+}
+
+.border1{
+
+  margin: 0;
+  border: 20px solid #23b090;
+}
+hr.style-four {
+    text-align: center;
+    width: 230px;
+    height: 12px;
+    border: 0;
+    box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0.5);
+}
+
+.nav-link{
+font-size: 1.1rem;
+}
+
+#servise .card{
+  border: none;
+  background-color: #f5f5f5;
+  height: 450px;
+  padding: 0;
+  margin: 0;
+}
+#servise .card-img-top{
+  max-width: 347.5px;
+  height: 250px;
+  transition: all 0.5s ease-out 0.0s;
+
+}
+#servise .card-img-top:hover{
+
+transform: scale(1.1);
+}
+#servise .card-text{
+  height: 96px;
+  overflow: hidden;
+}
+
+#servise1 .card{
+  border: none;
+  background-color: white;
+  height: 450px;
+  padding: 0;
+  margin: 0;
+}
+#servise1 .card-img-top{
+  max-width: 347.5px;
+  height: 250px;
+  transition: all 0.5s ease-out 0.0s;
+
+}
+#servise1 .card-img-top:hover{
+
+transform: scale(1.1);
+}
+#servise1 .card-text{
+  height: 96px;
+  overflow: hidden;
+}
+
+#equipe .hovereffect {
+  width: 100%;
+  height: 100%;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  cursor: default;
+  background: #23b096;
+}
+
+
+#equipe .hovereffect .overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  padding: 50px 20px;
+}
+
+#equipe .hovereffect img {
+  display: block;
+  position: relative;
+  max-width: none;
+  width: calc(100% + 50px);
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(-10px,0,0);
+  transform: translate3d(-10px,0,0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+#equipe .hovereffect:hover img {
+  opacity: 0.4;
+  filter: alpha(opacity=40);
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+
+#equipe .hovereffect h2 {
+  text-transform: uppercase;
+  color: #fff;
+  text-align: left;
+  position: relative;
+  font-size: 17px;
+  overflow: hidden;
+  padding: 0.5em 0;
+  background-color: transparent;
+  margin-bottom: 0px;
+
+}
+
+#equipe .hovereffect h2:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  margin-bottom: 0px;
+  background: #fff;
+  content: '';
+  -webkit-transition: -webkit-transform 0.35s;
+  transition: transform 0.35s;
+  -webkit-transform: translate3d(-100%,0,0);
+  transform: translate3d(-100%,0,0);
+}
+
+
+
+
+
+#equipe .hovereffect a, .hovereffect p {
+  color: #FFF;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(100%,0,0);
+  transform: translate3d(100%,0,0);
+}
+
+#equipe .hovereffect:hover a, .hovereffect:hover p {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+
+
+
+
+@media (max-width:576px) {
+  nav .container{
+    width: 100%;
+  }
+
+}

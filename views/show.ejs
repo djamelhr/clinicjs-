@@ -1,0 +1,32 @@
+<% include ./partials/header %>
+<section>
+  <div class="row " id="home-servise">
+    <div class="col-md-12 text-center mt-5">
+      <h1 class="text-center"><%= servise.title %></h1>
+      <p class="lead text-center"> home/servise</p>
+    </div>
+</div>
+
+<!--servise-->
+<div class="container  mt-3" >
+  <div class="row  ">
+    <div class="col-md-4 m-auto col-sm-12 " id="servise1">
+      <div class="card ">
+        <img class="card-img-top" src="<%= servise.img %>">
+        <div class="card-body ml-1">
+          <a class=" my-3 card-title " href="#"><%= servise.title %></a>
+          <p class="card-text"><%= servise.body %></p>
+          <a href="#" class="btn btn-outline-success btn-sm "> Lire La Suite</a>
+        </div>
+
+      </div>
+    </div>
+
+
+
+
+  </div>
+
+</div>
+
+</section>
