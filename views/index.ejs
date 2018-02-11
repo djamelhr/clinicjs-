@@ -60,42 +60,21 @@
      </div>
    </div>
 <div class="row">
+ <% servises.forEach(function (servise) { %>
   <div class="col-md-4 col-sm-12 col-lg-4">
+
     <div class="card">
-      <img class="card-img-top" src="https://farm3.staticflickr.com/2154/2493026495_bc84aa867f.jpg">
+      <img class="card-img-top" src="<%= servise.image %>">
       <div class="card-body ml-1">
-        <a class=" my-3 card-title " href="#">Endodontie</a>
-        <p class="card-text">L’endodontie est une spécialité de la dentisterie qui consiste à traiter (dévitaliser) la ou les racines d’une dent lorsque celle ci est infectée (abcès dentaire) ou s'il y eu par exemple échec d'un (...)</p>
-        <a href="#" class="btn btn-outline-success btn-sm "> Lire La Suite</a>
+        <a class=" my-3 card-title " href="/servises/<%= servise._id %> "> <%= servise.title %></a>
+        <p class="card-text"> <%= servise.body.substring(0,60) %>(..)</p>
+        <a href="/servises/<%= servise._id %> " class="btn btn-outline-success btn-sm "> Lire La Suite</a>
       </div>
 
     </div>
+
   </div>
-
-  <div class="col-md-4 col-sm-12">
-    <div class="card">
-      <img class="card-img-top" src="https://farm3.staticflickr.com/2154/2493026495_bc84aa867f.jpg">
-      <div class="card-body  ml-1">
-        <a class="card-title my-3" href="#" >Parodontologie</a>
-        <p class="card-text">Le Parodonte est l’ensemble des tissus de soutient de la dent : la gencive, l’os alvéolaire, le ligament alvéolo-dentaire. le parodonte peut être atteint par plusieurs affections (gingivite, (...)</p>
-        <a href="#" class="btn btn-outline-success btn-sm "> Lire La Suite</a>
-      </div>
-
-    </div>
-  </div>
-
-  <div class="col-md-4 col-sm-12">
-    <div class="card">
-      <img class="card-img-top " src="https://farm3.staticflickr.com/2154/2493026495_bc84aa867f.jpg">
-      <div class="card-body ml-1">
-        <a class="card-title my-3" href="#"  >Blanchiment dentaire</a>
-        <p class="card-text">Le Blanchiment ou Éclaircissement dentaire est une méthode utilisée pour faire changer de couleur aux dents en les rendant plus claires ou plus blanches les causes de la coloration des dents sont (...)</p>
-        <a href="#" class="btn btn-outline-success btn-sm "> Lire La Suite</a>
-      </div>
-
-    </div>
-  </div>
-
+<% }); %>
 </div>
  </div>
 </section>

@@ -10,14 +10,15 @@
 <!--servise-->
 <div class="container  mt-3" >
   <div class="row  ">
-    <div class="col-md-4 m-auto col-sm-12 " id="servise1">
-      <div class="card ">
-        <img class="card-img-top" src="<%= servise.img %>">
-        <div class="card-body ml-1">
-          <a class=" my-3 card-title " href="#"><%= servise.title %></a>
-          <p class="card-text"><%= servise.body %></p>
-          <a href="#" class="btn btn-outline-success btn-sm "> Lire La Suite</a>
-        </div>
+
+    <div class=" col-md-8 ">
+      <a class=" my-3" href="#"><%= servise.title %></a>
+      <p class="muted"><%= servise.body %></p>
+    </div>
+    <div class="col-md-4  m-auto " id="servise1">
+        <img class="" src="<%= servise.image %>">
+    </div>
+
 
       </div>
     </div>
@@ -25,7 +26,7 @@
 
 
 
-  </div>
+
 
 </div>
 

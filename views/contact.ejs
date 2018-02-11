@@ -1,0 +1,22 @@
+
+<% include ./partials/header %>
+<div class="container my-5" >
+  <h2>Envoye un message</h2>
+
+  <form action="/contacts" method="POST">
+    <div class="form-group">
+      <label for="">Votre adresse email (obligatoire)</label>
+      <input class="form-control" type="email" name="contact[email]" value="" placeholder="Email">
+      <label for="">Sujet (obligatoire)</label>
+      <input class="form-control form-text" type="text" name="contact[sujet]" value="" placeholder="Sujet">
+      <label for="">Texte de votre message (obligatoire)</label>
+      <textarea class="form-control " name="contact[text]" rows="8" cols="80" placeholder=""></textarea>
+      <button type="submit" name="button"> submit</button>
+
+    </div>
+
+
+  </form>
+</div>
+
+<% include ./partials/footer %>
